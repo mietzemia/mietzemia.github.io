@@ -1,75 +1,183 @@
+@font-face {
+  font-family: Americana Std;
+  src: url(assets/Americana\ Std\ Italic.otf);
+}
+
+body {
+  margin: 0;
+  padding-left: 1cm;
+}
+
+.nav {
+  font-family: Americana Std;
+  font-size: 1rem;
+  color: orange;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+}
+
+.nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 15px;
+}
+
+.nav a:hover {
+  color:orange;
+}
+
+body.projekt1 {
+font-family: Americana Std;
+src: url(assets/Americana\ Std\ Italic.otf);
+font-size: 3rem;
+color: peachpuff;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+margin-top: 2cm;
+padding-left: 5cm;
+
+background-image: url('img/projektö.JPEG');
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 20%;
+object-fit: cover;
+z-index: -1;
+}
+
+.projekte {
+font-family: Americana Std;
+src: url(assets/Americana\ Std\ Italic.otf);
+font-size: 3rem;
+color: peachpuff;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+position: fixed;
+padding-left: 20cm;
+margin-top: 6cm;
+}
+
+body.projekt2 {
+  font-family: Americana Std;
+  src: url(assets/Americana\ Std\ Italic.otf);
+  font-size: 3rem;
+  color: peachpuff;
+  margin-top: 2cm;
+  padding-left: 5cm;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+  background-image: url('img/miä.JPEG');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 10%;
+  object-fit: cover;
+  z-index: -1;
+  }
+
+.über {
+  font-family: Americana Std;
+  src: url(assets/Americana\ Std\ Italic.otf);
+  font-size: 3rem;
+  color: peachpuff;
+  position:fixed;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.para {
+  font-family: Americana Std;
+  src: url(assets/Americana\ Std\ Italic.otf);
+  font-size: 2rem;
+  color: peachpuff;
+  margin-top: 3cm;
+  padding-left: 8cm;
+  position: relative;
+}
+
+body.impressum {
+  background-image: url('img/gif.GIF');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  font-family: Americana Std;
+  src: url(assets/Americana\ Std\ Italic.otf);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(40vh - 65px);
+}
+
+.interactive-word {
+  font-size: 3rem;
+  font-family: Americana Std;
+  src: url(assets/Americana\ Std\ Italic.otf);
+  color: beige;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.interactive-word:hover {
+  font-size: 4rem;
+  transform: scale(1.2);
+  text-shadow: 4px 4px 10px rgba(209, 118, 6, 0.8);
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
 h1 {
-    color: red;
-    font-size: xxx-large;
-    font-family: monospace;
-    text-align: right;
-}
-.title {
-    color:aqua;
-    font-style: oblique;
-    position:relative;
-    left: 50px;
-}
-#title {
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-stretch: extra-condensed;
-}
-body{
-    background-color: rgb(255, 0, 225)
-}
-nav{
-    color: rgb(170, 205, 14);
-    font-size: x-large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-stretch: expanded; 
-    position: fixed;
-}
-li a:hover :not(.active){
-    color: blueviolet;
-}
-#img-1.visible{
-    opacity: 1;
+  font-family: Americana Std;
+  src: url(assets/Americana\ Std\ Italic.otf);
+  color: beige;
+  font-size: 6rem;
+  font-weight: bold;
+  position: absolute;
+  text-align: left;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+html, body, * {
+  cursor: url('img/stern.png'), auto;
+}
 
+a, button, .center {
+  cursor: url('img/stern.png'), auto;
+}
 
-
-
-
-/* Basic Reset */
- /* Reset default CSS values */
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  /* Navbar styling */
-  .navbar {
-    display: flex;
-    justify-content: space-between; /* Align logo & links horizontally */
-    /*"space between" creates the biggest possible space between items */
-    align-items: center; /* Align logo & links vertically */
-    padding: 1rem 2rem; /* Add padding to the navbar */
-    background-color: #333;
-    color: #fff;
-  }
-
-  .navbar .logo {
-    font-size: 1.5rem; 
-    font-weight: bold; 
-  }
-
-  /* Links styling */
-  .nav-links {
-    display: flex; 
-    gap: 2rem; 
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     font-size: 1rem;
-  }
+    color: beige;
+}
+
+footer a {
+    color: beige;
+    text-decoration: none;
+}
+
+@media screen {
+  
+}
